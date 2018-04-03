@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=meta, minimum-scale=1.0">
+		<meta name="viewport" content="height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript">
+			(function() {
+				function fontFun() {
+					var winW = document.documentElement.clientWidth; //浏览器可视宽度
+					document.documentElement.style.fontSize = (winW / 750 * 625) + "%";
+				}
+				fontFun();
+				window.onresize = fontFun;
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="main" height='device-width'>
+			<div class="img_01">
+				<img src="img/img_01.png" width="100%"/>
+			</div>
+			<div class="img_02">
+				<img src="img/img_02.png" width="100%"/>
+			</div>
+			<div class="img_03">
+				<img src="img/img_03.png" width="100%"/>
+			</div>
+			<div class="img_04">
+				<img src="img/img_04.png" width="100%"/>
+			</div>
+			<div class="img_06">
+				<img src="img/img_06.png" width="100%"/>
+			</div>
+			<div class="img_05">
+				<img src="img/img_05.png" width="100%"/>
+			</div>
+			<div class="n_01">
+				<img src="img/n-01.png" width="100%"/>
+			</div>
+			<div class="n_02">
+				<img src="img/n-02.png" width="100%"/>
+			</div>
+			<div class="n_03">
+				<img src="img/n-03.png" width="100%"/>
+			</div>
+			<div class="text_01">啊</div>
+			<div class="text_02">啊</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			setTimeout(function(){
+				window.location.href='content.html'
+			},5000);
+		</script>
+	</body>
+</html>

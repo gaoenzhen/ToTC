@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<script type="text/javascript">
+			(function() {
+				function fontFun() {
+					var winW = document.documentElement.clientWidth; //浏览器可视宽度
+					document.documentElement.style.fontSize = (winW / 750 * 625) + "%";
+				}
+				fontFun();
+				window.onresize = fontFun;
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide_01">
+					<img src="img/content_img_01.png"class="slide_01_img_01 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>
+					<img src="img/content_img_02.png"class="slide_01_img_02 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+					<img src="img/content_img_03.png"class="slide_01_img_03 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+					<img src="img/content_img_04.png"class="slide_01_img_04 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>
+					<div class="slide_01_main_01">
+						<p class="ani"  swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s">123132</p>
+					</div>
+					<div class="slide_01_main_02">
+						<p class="ani"  swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="2.5s">啊啊啊啊啊</p>
+					</div>
+					<div class="slide_01_main_03">
+						<p class="ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="3.5s">123132</p>
+					</div>
+					<div class="slide_01_main_04">
+						<p class="ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="4.5s">啊啊啊啊啊</p>
+					</div>
+					<div class="slide_01_main_05">
+						<p class="ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">123132</p>
+					</div>
+					<div class="slide_01_main_06">
+						<p class="ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="6.5s">啊啊啊啊啊</p>
+					</div>
+					<div class="slide_01_main_07">
+						<p class="ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="7.5s">啊啊啊啊啊</p>
+					</div>
+				</div>
+				<div class="swiper-slide slide_02">
+					<div class="slide_02_top ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><img src="img/slide02_img_01.png" width="100%"/></div>
+					<div class="slide_02_bottom ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.7s"><img src="img/slide02_img_02.png" width="100%"/></div>
+					<div class="photo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.7s">
+						<img src="img/photo_bg.png"/>
+					</div>
+					<div class="photo02 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+						<img src="img/photo.jpg"/>
+					</div>
+					<div class="slide_02_title ani"  swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="2.3s">A A A A</div>
+				</div>
+				<div class="swiper-slide slide_03">
+					<p>啊啊啊啊啊啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+					<p>啊啊啊啊啊</p>
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+		<script src="https://cdn.bootcss.com/Swiper/4.2.0/js/swiper.js"></script>
+		<script src="js/swiper.animate1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>        
+	  var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'vertical',
+	    loop: false,
+		on: {
+			init: function(){
+		        swiperAnimateCache(this); //隐藏动画元素 
+		        swiperAnimate(this); //初始化完成开始动画
+		    }, 
+		    slideChangeTransitionEnd: function(){
+		      	swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+		    },
+		},
+	    // 如果需要分页器
+	    pagination: {
+	      el: '.swiper-pagination',
+	    },
+	  })        
+	  </script>
+	</body>
+</html>

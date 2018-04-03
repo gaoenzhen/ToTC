@@ -1,0 +1,166 @@
+*{ margin:0px; padding:0px; border:0px none; outline:none;}
+input{ outline:none;}
+li{ list-style:none;}
+img{ border:0 none; vertical-align:top;}
+em,i,b{ font-style:normal;}
+a{ text-decoration:none; cursor: pointer; color: #000;}
+.clearf{margin:0px auto; *zoom:1;}
+.clearf:after{ content:"."; clear:both; display:block; height:0; visibility:hidden;}
+body{
+	font-family: "微软雅黑";
+}
+.main{
+	width: 100%;
+	position: relative;
+}
+.img_01{
+	width: 100%;
+	height: 3.2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: dh_01 1s;
+}
+.img_02{
+	width: 100%;
+	height: 8.4rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	animation: dh_02 1s forwards;
+	animation-delay: 1s;
+}
+.img_03{
+	width: 100%;
+	height: 3.22rem;
+	position: absolute;
+	top: 2.33rem;
+	right: -3.25rem;
+	animation: dh_03 1s forwards;
+	animation-delay:0.5s;
+}
+.img_04{
+	width: 1.21rem;
+	height: 0.65rem;
+	position: absolute;
+	top: 4.36rem;
+	right: 1.35rem;
+	opacity: 0;
+	animation: dh_04 1s forwards;
+	animation-delay: 1.5s;
+}
+.img_05{
+	width: 100%;
+	height: 2.64rem;
+	position: fixed;
+	bottom: -2.64rem;
+	left: 0;
+	animation: dh_05 1s forwards;
+	animation-delay: 0.5s;
+}
+.img_06{
+	width: 100%;
+	height: 1.7rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	animation: dh_06 1s forwards;
+}
+.n_01{
+	width: 0.29rem;
+	height: 0.38rem;
+	position: absolute;
+	top: 6.24rem;
+	left: 8.15rem;
+	animation: dh_n_01 1s forwards linear;
+	animation-delay: 2s;
+}
+.n_02{
+	width: 0.43rem;
+	height: 0.58rem;
+	position: absolute;
+	top: 6.24rem;
+	left: 8.15rem;
+	animation: dh_n_02 1s forwards linear;
+	animation-delay: 2.2s;
+}
+.n_03{
+	width: 0.47rem;
+	height: 0.89rem;
+	position: absolute;
+	top: 6.24rem;
+	left: 8.15rem;
+	animation: dh_n_03 1s forwards linear;
+	animation-delay: 2.5s;
+}
+@keyframes dh_01{
+	from{top: -3.2rem;opacity: 0.5;}
+	to{top: 0;opacity: 1;}
+}
+@keyframes dh_02{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes dh_03{
+	from{right: -3.25rem;opacity: 0.5;}
+	to{right: 0;opacity: 1;}
+}
+@keyframes dh_04{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes dh_05{
+	from{bottom: -2.64rem;opacity: 0.5;}
+	to{bottom: 0;opacity: 1;}
+}
+@keyframes dh_06{
+	from{bottom: -1.7rem;opacity: 0.5;}
+	to{bottom: 0;opacity: 1;}
+}
+@keyframes dh_n_01{
+	0%{left: 8.15rem;top: 6.24rem;}
+	25%{left: 6rem;top: 6rem;}
+	50%{left: 3.65rem;top: 5.5rem;}
+	75%{left: 1.85rem;top: 4.5rem;}
+	100%{left: 0.65rem;top: 3.24rem;}
+}
+@keyframes dh_n_02{
+	0%{left: 8.15rem;top: 5rem;}
+	25%{left: 6rem;top: 4.5rem;}
+	50%{left: 5rem;top: 4rem;}
+	75%{left: 3rem;top: 3.5rem;}
+	100%{left: 2.49rem;top: 3.17rem;}
+}
+@keyframes dh_n_03{
+	0%{left: 8.15rem;top: 5rem;}
+	25%{left: 6rem;top: 4.5rem;}
+	50%{left: 5rem;top: 4rem;}
+	75%{left: 3rem;top: 3.5rem;}
+	100%{left: 1.81rem;top: 3.62rem;}
+}
+.text_01,.text_02{
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url(../img/text_bg.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 1rem;
+	line-height: 1.8rem;
+	text-align: center;
+	color: green;
+	position: absolute;
+}
+.text_01{
+	left: 1.5rem;
+	top: 5.7rem;
+	opacity: 0;
+	animation: dh_04 1s forwards;
+	animation-delay: 3s;
+}
+.text_02{
+	left: 4rem;
+	top: 7.7rem;
+	opacity: 0;
+	animation: dh_04 1s forwards;
+	animation-delay: 3s;
+}
