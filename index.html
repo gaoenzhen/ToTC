@@ -17,7 +17,12 @@
 			})();
 		</script>
 	</head>
-	<body>
+	<body class="is-loading">
+		<div class="curtain">
+		    <div class="loader">
+		        loading...
+		    </div>
+		</div> 
 		<div class="main" height='device-width'>
 			<div class="img_01">
 				<img src="img/img_01.png" width="100%"/>
@@ -51,6 +56,9 @@
 		</div>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			 window.onload=function(){
+			     $('body').removeClass('is-loading');  
+			 }
 			setTimeout(function(){
 				window.location.href='content.html'
 			},5000);
